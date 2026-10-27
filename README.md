@@ -3,7 +3,7 @@
 The plugin marketplace for [Gyrospec](https://github.com/gyrospec/skills). It lists two plugins, both built from `gyrospec/skills`:
 
 - **`gyrospec`**: the Gyrospec local mode skills: discovery, PRD, prototype, spec, breakdown, writing plans, and executing plans, with gates you approve, plus the offline `gyro` script.
-- **`mattpocock-skills`**: the upstream skills the Gyrospec phases call (`grilling`, `prototype`, `tdd`, `code-review`, `domain-modeling`, `codebase-design`), from the same repository.
+- **`gyrospec-upstream-skills`**: Matt Pocock's skills from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT), as kept in the Gyrospec fork: the upstream skills the Gyrospec phases call (`grilling`, `prototype`, `tdd`, `code-review`, `domain-modeling`, `codebase-design`), from the same repository.
 
 Install both. Every agent also needs **Node 20 or later**, because the skills run `gyro.mjs` with `node`.
 
@@ -24,7 +24,7 @@ Pick one route per agent. A plugin install and a folder copy in the same agent g
 ```text
 /plugin marketplace add gyrospec/marketplace
 /plugin install gyrospec@gyrospec
-/plugin install mattpocock-skills@gyrospec
+/plugin install gyrospec-upstream-skills@gyrospec
 ```
 
 The same from a terminal:
@@ -32,7 +32,7 @@ The same from a terminal:
 ```bash
 claude plugin marketplace add gyrospec/marketplace
 claude plugin install gyrospec@gyrospec
-claude plugin install mattpocock-skills@gyrospec
+claude plugin install gyrospec-upstream-skills@gyrospec
 ```
 
 Start a new session afterwards. The phase skills are typed by you (`/gyro-discovery` to `/gyro-executing-plans`); the model reaches the `gyro` reference skill itself.
@@ -42,7 +42,7 @@ Start a new session afterwards. The phase skills are typed by you (`/gyro-discov
 ```bash
 codex plugin marketplace add gyrospec/marketplace
 codex plugin add gyrospec@gyrospec
-codex plugin add mattpocock-skills@gyrospec
+codex plugin add gyrospec-upstream-skills@gyrospec
 ```
 
 On Windows, keep `CODEX_HOME` on a short path: Codex clones the plugin repository there, and a very long path fails with `Filename too long`.
@@ -54,7 +54,7 @@ Copilot reads the same marketplace format. This should work, but nobody has run 
 ```bash
 copilot plugin marketplace add gyrospec/marketplace
 copilot plugin install gyrospec@gyrospec
-copilot plugin install mattpocock-skills@gyrospec
+copilot plugin install gyrospec-upstream-skills@gyrospec
 ```
 
 ### Gemini CLI (not tested yet)

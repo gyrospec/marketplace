@@ -18,7 +18,7 @@
       "keywords": ["product", "prd", "spec", "planning"]
     },
     {
-      "name": "mattpocock-skills",
+      "name": "gyrospec-upstream-skills",
       "source": {
         "source": "url",
         "url": "https://github.com/gyrospec/skills.git"
