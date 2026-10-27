@@ -20,8 +20,8 @@
     {
       "name": "mattpocock-skills",
       "source": {
-        "source": "github",
-        "repo": "gyrospec/skills"
+        "source": "url",
+        "url": "https://github.com/gyrospec/skills.git"
       },
       "description": "Matt Pocock's agent skills (grilling, prototype, TDD, code review, domain modelling) that the Gyrospec skills call.",
       "category": "engineering"
