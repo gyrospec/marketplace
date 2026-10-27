@@ -1,0 +1,30 @@
+{
+  "name": "gyrospec",
+  "owner": {
+    "name": "Gyrospec",
+    "url": "https://github.com/gyrospec"
+  },
+  "description": "Gyrospec plugins for Claude Code.",
+  "plugins": [
+    {
+      "name": "gyrospec",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/gyrospec/skills.git",
+        "path": "skills/gyrospec"
+      },
+      "description": "Human-driven product engineering: discovery, PRD, prototype, spec, sub-tickets, and planned execution, with gates you approve.",
+      "category": "engineering",
+      "keywords": ["product", "prd", "spec", "planning"]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "gyrospec/skills"
+      },
+      "description": "Matt Pocock's agent skills (grilling, prototype, TDD, code review, domain modelling) that the Gyrospec skills call.",
+      "category": "engineering"
+    }
+  ]
+}
